@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 120px;
+    background-color: rgb(36, 36, 36);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 25px;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 600;
+}
+nav a {
+    font-size: 20px;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 20px;
+    transition: 0.5s;
+}
+nav a:hover {
+    color: blueviolet;
+}
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 120px;
+    background: rgb(20, 17, 27);
+    gap: 50px;
+}
+section:nth-child(odd){
+    background: rgb(29, 25, 37);
+}
+.home-text {
+    flex: 1;
+    color: white;
+}
+.home-text h1 {
+    font-size: 3rem;
+}
+.home-text h2 {
+    font-size: 2rem;
+    margin: 10px 0;
+    color: #b19cd9;
+}
+.home-text p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #ddd;
+}
+.home-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.home-image img {
+    max-width: 350px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+#biodata {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px;
+    background-color: rgb(29, 25, 37); 
+    color:aliceblue;
+}
+#biodata h1 {
+    margin-bottom: 15px;
+}
+#biodata p {
+    font-weight: 700;
+    max-width: 700px;
+    line-height: 1.5;
+}
+#pengalaman {
+    min-height: 100vh;
+    padding: 100px;
+    background-color: rgb(20, 17, 27);
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pengalaman-container {
+    display: flex;
+    gap: 40px;
+    max-width: 1000px;
+    width: 100%;
+    justify-content: center;
+}
+.pengalaman-isi{
+    background-color: rgb(36, 36, 36);
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1 1 250px;
+    max-width: 300px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+.pengalaman-isi h2 {
+    margin-bottom: 10px;
+    color: #b19cd9;
+}
+.pengalaman-isi ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+.pengalaman-isi li {
+    margin-bottom: 8px;
+}
+#pendidikan {
+    min-height: 100vh;
+    padding: 100px;
+    background-color: rgb(29, 25, 37);
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 700;
+}
+.pendidikan-container {
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+.pendidikan-container h1 {
+    margin-bottom: 20px;
+    color: #b19cd9;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgb(36, 36, 36);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+thead {
+    background-color: #b19cd9;
+    color: white;
+}
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+}
+tbody tr:nth-child(even) {
+    background-color: rgb(46, 46, 46);
+}
+tbody tr:hover {
+    background-color: rgb(60, 60, 60);
+    transition: 0.3s;
+}
+#kontak {
+    min-height: 100vh;
+    padding: 100px;
+    background-color: rgb(20, 17, 27);
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.kontak-container {
+    text-align: center;
+}
+.kontak-container h1 {
+    margin-bottom: 10px;
+    color: #b19cd9;
+}
+.kontak-container p {
+    margin-bottom: 20px;
+    color: #ddd;
+}
+.social-buttons {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+.btn {
+    padding: 12px 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.btn:hover {
+   color: blueviolet;
+}
+.facebook {
+    background-color: rgb(60, 60, 60);
+}
+.instagram {
+    background-color: rgb(60, 60, 60);
+}
+.github {
+    background-color: rgb(60, 60, 60);
+}
